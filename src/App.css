@@ -1,0 +1,260 @@
+.App{
+  height:auto;
+  margin-bottom:20px;
+  
+}
+
+.Main-container {
+  width: 100%;
+  height: 450px;
+  margin-top: 30px;
+  
+}
+
+.img{
+  position: relative;
+  background-image: url('dress3.avif');
+  height: 100%;
+  background-size: cover;
+}
+
+.img-cover{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index:1;
+}
+
+.img .content{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size:5rem;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+.content p {
+  font-size: 14px;
+}
+.content h1{
+  font-weight: bold;
+}
+.getStart {
+  padding: 10px 25px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #FF7A85, #FFB185);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.getStart:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.About{
+  width: 100%;
+  height:800px;
+  margin-top:-50px;
+  max-width: 700px;
+  margin-left:auto;
+  margin-right: auto;
+  display: flex;        /* Using flexbox */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;  /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+}
+
+.About h3{
+  font-weight: bold;
+  text-align: center;
+}
+
+.About p{
+  font-size: 14px;
+  margin-top:30px;
+  padding:20px;
+  margin-bottom:30px;
+}
+
+.About img{
+  margin-top:30px;
+  width:700px;
+  height:300px;
+  border-radius:20px;
+
+  transition: transform 0.3s ease;
+}
+.About img:hover
+{
+  transform: scale(1.05); /* Scales up the image to 110% of its original size */
+}
+.demonstration-container{
+  width:100%;
+  max-width: 1200px;
+  height:600px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  
+}
+
+.demonstration-container h3{
+  font-weight: bold;
+}
+
+.slidercontents {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  
+}
+
+#carousel-container{
+  width:450px;
+  
+  margin:auto;
+}
+
+.slidercontents img{
+  width:100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+
+.generating-container{
+  width:100%;
+  max-width: 800px;
+  height:800px;
+  margin: auto;
+}
+
+.generating-dress{
+  width:100%;
+  max-width: 800px;
+  margin:auto;
+  height:600px;
+  background-color: #E6E6FA;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.generating-dress h1{
+  font-weight: bold;
+
+}
+
+.generating-title{
+  font-weight: bold;
+}
+
+
+.options {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: violet;
+  border: 2px solid violet;
+  border-radius: 30px; /* Rounded corners for a soft, modern look */
+  cursor: pointer;
+  outline: none;
+  margin:10px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); /* Subtle shadow for depth */
+}
+
+.options:hover {
+  transform: translateY(-2px); /* Slight raise effect on hover */
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.options:active {
+  transform: translateY(1px); /* Pushed effect when clicked */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lower shadow intensity when active */
+}
+
+.custom-input {
+  margin-top:20px;
+  width: 80%;              /* Full width to utilize container space */
+  padding: 15px 30px;       /* Vertical and horizontal padding */
+  font-size: 14px;          /* Sizable text for readability */
+  color: #000;              /* Text color */
+  background-color: #ffffff; /* Light background color */
+  border: none;             /* No borders for a clean look */
+  border-radius: 30px;      /* Fully rounded edges for a modern, button-like feel */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  outline: none;            /* Remove the default focus outline */
+  transition: all 0.3s ease; /* Smooth transition for interactive effects */
+
+  /* Adjust internal text alignment */
+  text-align: left;
+}
+
+.custom-input::placeholder {
+  color: #aaa; /* Light color for the placeholder text */
+}
+
+.custom-input:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow on focus for visual feedback */
+}
+
+.next-button {
+  padding: 10px 20px;               /* Padding around the text */
+  font-size: 16px;                  /* Font size for the button text */
+  color: #ffffff;                   /* White text color */
+  background-color: #6a5acd;        /* Solid color background */
+  border: none;                     /* No border for the button */
+  border-radius: 20px;              /* Rounded corners for the button */
+  cursor: pointer;                  /* Pointer cursor on hover */
+  outline: none;                    /* No outline on focus for a clean design */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  display: inline-block;            /* Makes the button align properly with text */
+  font-family: Arial, sans-serif;   /* Font family for the button text */
+}
+
+.next-button:hover {
+  background-color: #836fff;        /* Lighter purple on hover for visual feedback */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.next-button:active {
+  background-color: #5a4aad;        /* Darker purple for active state */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Smaller shadow to simulate pressing the button */
+}
+
+.pagination{
+  width:100%;
+}
+
+.pagination button{
+  width:120px;
+  height:5px;
+  margin:10px;
+  border: none;
+  border-radius:20px;
+
+}
+
+.pagination button.active {
+  background-color: #6a5acd; /* 활성 버튼의 배경색 */
+}
+
+.options.selected {
+  background-color: violet; /* 선택된 버튼의 배경색 */
+  color: white; /* 선택된 버튼의 글자색 */
+}
+
